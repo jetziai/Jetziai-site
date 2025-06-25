@@ -3,31 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jet Ziai</title>
+  <title>Jet Ziai | Private Jet Listings</title>
   <style>
     body {
       margin: 0;
-      background: #0a0a0a;
+      background-color: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
       color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+    }
+
+    header {
+      padding: 40px 20px 20px;
       text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #fff;
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
+
+    .subtitle {
+      color: #999;
+      font-size: 1.2em;
+      margin-bottom: 30px;
     }
-    p {
-      color: #888;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 0 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #1b1b1b;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      padding: 10px;
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   </style>
 </head>
 <body>
-  <h1>Jet Ziai</h1>
-  <p>Luxury Private Jet Listings — Coming Soon</p>
+  <header>
+    Jet Ziai
+    <div class="subtitle">Luxury Private Jet Listings</div>
+  </header>
+
+  <div class="grid">
+    <!-- Example Jets -->
+    <a href="jet1.html" class="card">
+      <img src="https://images.unsplash.com/photo-1607082351850-8933c1c08333?auto=format&fit=crop&w=800&q=80" alt="Jet 1">
+      <div class="card-title">Gulfstream G650</div>
+    </a>
+    <a href="jet2.html" class="card">
+      <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&w=800&q=80" alt="Jet 2">
+      <div class="card-title">Bombardier Global 7500</div>
+    </a>
+    <a href="jet3.html" class="card">
+      <img src="https://images.unsplash.com/photo-1622724254351-6c126d66195e?auto=format&fit=crop&w=800&q=80" alt="Jet 3">
+      <div class="card-title">Cessna Citation X</div>
+    </a>
+    <a href="jet4.html" class="card">
+      <img src="https://images.unsplash.com/photo-1567880905316-1595a0d9f347?auto=format&fit=crop&w=800&q=80" alt="Jet 4">
+      <div class="card-title">Dassault Falcon 8X</div>
+    </a>
+    <a href="jet5.html" class="card">
+      <img src="https://images.unsplash.com/photo-1589395937772-12ab9f94f9b4?auto=format&fit=crop&w=800&q=80" alt="Jet 5">
+      <div class="card-title">Embraer Praetor 600</div>
+    </a>
+  </div>
 </body>
 </html>
