@@ -16,15 +16,8 @@
       font-family: 'Segoe UI', sans-serif;
       background: url('https://images.unsplash.com/photo-1512399144081-1e01e477a9fe?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
+      background-color: #1a1a1a; /* Fallback color */
       color: white;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.6);
-      z-index: -1;
     }
 
     h1 {
@@ -50,10 +43,10 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(0, 0, 0, 0.6);
       border-radius: 15px;
       overflow: hidden;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s;
     }
 
@@ -79,7 +72,7 @@
 
     .card .info p {
       font-size: 0.9rem;
-      color: #ccc;
+      color: #ddd;
     }
   </style>
 </head>
@@ -88,35 +81,35 @@
   <h2>Luxury Private Jet Listings</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://via.placeholder.com/400x200?text=Gulfstream+G280" />
+      <img src="https://via.placeholder.com/400x200?text=Gulfstream+G280" alt="Jet 1">
       <div class="info">
         <h3>2015 Gulfstream G280</h3>
         <p>Call for Price · Minneapolis, MN</p>
       </div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/400x200?text=Dassault+Falcon+7X" />
+      <img src="https://via.placeholder.com/400x200?text=Dassault+Falcon+7X" alt="Jet 2">
       <div class="info">
         <h3>2014 Dassault Falcon 7X</h3>
         <p>Call for Price · Burnsville, MN</p>
       </div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/400x200?text=Citation+X" />
+      <img src="https://via.placeholder.com/400x200?text=Citation+X" alt="Jet 3">
       <div class="info">
         <h3>2019 Cessna Citation X</h3>
         <p>Call for Price · Chicago, IL</p>
       </div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/400x200?text=Challenger+350" />
+      <img src="https://via.placeholder.com/400x200?text=Challenger+350" alt="Jet 4">
       <div class="info">
         <h3>2020 Challenger 350</h3>
         <p>Call for Price · Los Angeles, CA</p>
       </div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/400x200?text=Legacy+500" />
+      <img src="https://via.placeholder.com/400x200?text=Legacy+500" alt="Jet 5">
       <div class="info">
         <h3>2018 Embraer Legacy 500</h3>
         <p>Call for Price · Dallas, TX</p>
