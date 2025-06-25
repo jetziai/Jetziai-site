@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jet Ziai | Private Jet Listings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jet Ziai | Luxury Jet Listings</title>
   <style>
     body {
       margin: 0;
@@ -11,79 +11,91 @@
       font-family: 'Segoe UI', sans-serif;
       color: white;
     }
-
     header {
-      padding: 40px 20px 20px;
       text-align: center;
-      font-size: 2.5em;
-      font-weight: bold;
-      color: #fff;
+      padding: 40px 20px 20px;
     }
-
-    .subtitle {
-      color: #999;
-      font-size: 1.2em;
-      margin-bottom: 30px;
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
     }
-
+    header p {
+      font-size: 1.3em;
+      color: #aaa;
+    }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 0 20px 40px;
-      max-width: 1200px;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 24px;
+      padding: 40px;
+      max-width: 1400px;
       margin: auto;
     }
-
     .card {
       background-color: #1b1b1b;
       border-radius: 12px;
       overflow: hidden;
-      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
       transition: transform 0.2s ease;
     }
-
     .card:hover {
-      transform: scale(1.02);
+      transform: scale(1.03);
     }
-
     .card img {
       width: 100%;
-      height: 140px;
+      height: 160px;
       object-fit: cover;
     }
-
-    .card-title {
-      padding: 10px;
-      font-size: 1em;
-      color: #ccc;
+    .card-content {
+      padding: 12px 14px;
     }
-
-    a {
-      text-decoration: none;
-      color: inherit;
+    .card-title {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .card-info {
+      font-size: 0.95em;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
+
   <header>
-    Jet Ziai
-    <div class="subtitle">Luxury Private Jet Listings</div>
+    <h1>Jet Ziai</h1>
+    <p>Luxury Private Jet Listings</p>
   </header>
 
   <div class="grid">
     <a href="jet1.html" class="card">
-      <img src="https://www.jetphotos.com/images/2.jpg" alt="Jet 1" />
-      <div class="card-title">Gulfstream G650</div>
+      <img src="https://images.unsplash.com/photo-1607082318509-8931c0083373?auto=format&fit=crop&w=800&q=80" alt="Gulfstream G280" />
+      <div class="card-content">
+        <div class="card-title">2015 Gulfstream G280</div>
+        <div class="card-info">Call for Price • Minneapolis, MN</div>
+      </div>
     </a>
+
     <a href="jet2.html" class="card">
-      <img src="https://www.jetphotos.com/images/3.jpg" alt="Jet 2" />
-      <div class="card-title">Dassault Falcon 8X</div>
+      <img src="https://images.unsplash.com/photo-1550493062-60e91531270e?auto=format&fit=crop&w=800&q=80" alt="Dassault Falcon 7X" />
+      <div class="card-content">
+        <div class="card-title">2014 Dassault Falcon 7X</div>
+        <div class="card-info">Call for Price • Burnsville, MN</div>
+      </div>
     </a>
+
     <a href="jet3.html" class="card">
-      <img src="https://www.jetphotos.com/images/4.jpg" alt="Jet 3" />
-      <div class="card-title">Bombardier Global 7500</div>
+      <img src="https://images.unsplash.com/photo-1627722454351-6c126d661952?auto=format&fit=crop&w=800&q=80" alt="Citation X" />
+      <div class="card-content">
+        <div class="card-title">2019 Cessna Citation X</div>
+        <div class="card-info">Call for Price • Chicago, IL</div>
+      </div>
     </a>
+
+    <!-- Add more jets as needed -->
   </div>
+
 </body>
 </html>
